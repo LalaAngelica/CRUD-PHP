@@ -1,7 +1,7 @@
 <?php
 include "Crud.php";
 
-$crud = new Crud(); // ← ESTA LÍNEA TE FALTABA
+$crud = new Crud(); 
 
 // Cuando envías el formulario
 if (isset($_POST["nombre"])) {
@@ -12,7 +12,6 @@ if (isset($_POST["nombre"])) {
     exit();
 }
 
-// Cuando entras por primera vez
 if (isset($_GET["id"])) {
     $id = $_GET["id"];
     $dato = $crud->obtenerPorId($id);
