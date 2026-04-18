@@ -1,9 +1,8 @@
 <?php
-include "Crud.php";
+include "Crud.php"; 
 
-$crud = new Crud(); 
+$crud = new Crud();   
 
-// Cuando envías el formulario
 if (isset($_POST["nombre"])) {
     $id = $_POST["id"];
     $nombre = $_POST["nombre"];
